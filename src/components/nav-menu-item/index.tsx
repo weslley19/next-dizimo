@@ -13,12 +13,12 @@ export default function NavMenuItem({ path, children }: NavMenuItemProps) {
 
   return (
     <>
-      <li className={clsx(
-        "flex items-center gap-3 h-8 rounded-md	px-3 my-1 hover:bg-nav-item transition ease-in-out cursor-pointer",
-        {
-          "bg-nav-item": pathname === path
-        }
-      )}
+      <li
+        className={clsx("flex items-center gap-3 h-8 rounded-md	px-3 my-1 hover:bg-nav-item transition ease-in-out cursor-pointer",
+          {
+            "bg-nav-item": pathname === path
+          }
+        )}
       >
         {children}
       </li>
