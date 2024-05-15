@@ -1,7 +1,8 @@
 import type { Metadata } from "next"
 import { Inter as FontSans } from "next/font/google"
-import "@/styles/globals.css"
+import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils"
+import "@/styles/globals.css"
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -23,7 +24,14 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           fontSans.variable
         )}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )
