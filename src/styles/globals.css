@@ -37,6 +37,8 @@
     --aside: 0, 0%, 100%;
     --aside-foreground: '';
 
+    --nav-item: 0, 0%, 92%;
+
     --header: 0, 0%, 100%;
     --header-foreground: '';
 
@@ -79,6 +81,8 @@
 
     --aside: 210, 11%, 10%;
     --aside-foreground: '';
+
+    --nav-item: 204, 4%, 25%;
 
     --header: 210, 11%, 10%;
     --header-foreground: '';

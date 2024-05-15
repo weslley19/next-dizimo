@@ -24,6 +24,9 @@ const config = {
     extend: {
       colors: {
         aside: "hsl(var(--aside))",
+        nav: {
+          item: "hsl(var(--nav-item))",
+        },
         header: "hsl(var(--header))",
         container: "hsl(var(--container))",
         content: "hsl(var(--content))",

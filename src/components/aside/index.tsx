@@ -1,7 +1,10 @@
 export default function Aside() {
   return (
     <>
-      <aside className="w-72 bg-aside border-r-2 py-3 px-3 border-custom">Aside</aside>
+      <aside className="w-72 bg-aside border border-custom">
+        <div className="h-16 px-3 py-3 flex justify-between items-center">aside</div>
+        <div className="px-3 py-3">Navbar</div>
+      </aside>
     </>
   )
 }
