@@ -48,6 +48,8 @@
     --content-foreground: '';
 
     --border: rgba(0, 0, 0, 0.08);
+
+    --font-size-xs: 0.8125rem;
   }
 
   .dark {

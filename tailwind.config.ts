@@ -14,6 +14,9 @@ const config = {
     fontFamily: {
       sans: ["var(--font-sans)", ...fontFamily.sans],
     },
+    fontSize: {
+      xs: "var(--font-size-xs)",
+    },
     container: {
       center: true,
       padding: "2rem",
