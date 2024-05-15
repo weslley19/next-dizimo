@@ -23,6 +23,10 @@ const config = {
     },
     extend: {
       colors: {
+        aside: "hsl(var(--aside))",
+        header: "hsl(var(--header))",
+        container: "hsl(var(--container))",
+        content: "hsl(var(--content))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -56,6 +60,16 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+      },
+      borderWidth: {
+        DEFAULT: "1px",
+        0: "0",
+        2: "2px",
+        4: "4px",
+        8: "8px",
+      },
+      borderColor: {
+        'custom': 'var(--border)',
       },
       borderRadius: {
         lg: "var(--radius)",
