@@ -26,7 +26,7 @@ export default function FormSignin() {
           type="submit"
           className="w-full"
         >
-          Entrar
+          Entrar {hookForm.formState.isSubmitting && '...'}
         </Button>
       </form>
     </>
