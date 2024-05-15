@@ -5,7 +5,7 @@ import NavMenuGroupItems from "../nav-menu-group-items";
 export default function NavMenu() {
   return (
     <>
-      <nav>
+      <nav className="mt-6">
         <ul className="text-xs">
           <NavMenuGroupItems>
             <NavMenuItem path="/">

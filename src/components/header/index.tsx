@@ -10,7 +10,7 @@ export default function Header() {
         <div className="border-b border-custom px-3 py-3
           flex justify-between items-center
         ">
-          <span>{user}</span>
+          <span className="font-semibold">{user}</span>
           <div className="flex items-center gap-2">
             <ThemeToggle />
             <Profile />
