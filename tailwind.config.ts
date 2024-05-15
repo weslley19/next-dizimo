@@ -16,6 +16,7 @@ const config = {
     },
     fontSize: {
       xs: "var(--font-size-xs)",
+      sm: "var(--font-size-sm)",
     },
     container: {
       center: true,

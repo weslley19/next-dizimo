@@ -1,10 +1,10 @@
-import NavMenu from "../nav-menu";
+import NavMenu from "../nav-menu"
 
 export default function Aside() {
   return (
     <>
-      <aside className="w-72 bg-aside border border-custom">
-        <div className="h-16 px-3 py-3 flex justify-between items-center">aside</div>
+      <aside className="w-[280px] bg-aside border border-custom">
+        <div className="h-16 px-3 py-3 flex justify-center items-center border-b border-custom">LOGO</div>
         <div className="px-3 py-3">
           <NavMenu />
         </div>

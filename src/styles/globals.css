@@ -50,6 +50,7 @@
     --border: rgba(0, 0, 0, 0.08);
 
     --font-size-xs: 0.8125rem;
+    --font-size-sm: 0.875rem;
   }
 
   .dark {
