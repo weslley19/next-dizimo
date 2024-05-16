@@ -25,8 +25,9 @@ export default function FormSignin() {
         <Button
           type="submit"
           className="w-full"
+          disabled={hookForm.formState.isSubmitting}
         >
-          Entrar {hookForm.formState.isSubmitting && '...'}
+          Entrar {hookForm.formState.isSubmitting && <span className="ml-2 animate-pulse w-5 h-5 bg-content rounded-full"></span>}
         </Button>
       </form>
     </>

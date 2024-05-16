@@ -3,7 +3,6 @@
 import { server } from "@/service/api"
 import { User, UserLogin } from "@/types/user"
 import { DefaultRequest } from "@/types/common"
-import { redirect } from "next/navigation"
 import { signIn } from "@/auth"
 import { AuthError } from "next-auth"
 

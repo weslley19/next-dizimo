@@ -1,7 +1,6 @@
 import { ThemeToggle } from "@/components/theme-toggle"
 import Profile from "@/components/profile"
-import { auth, signOut } from "@/auth"
-import { Button } from "../ui/button"
+import { auth } from "@/auth"
 
 export default async function Header() {
   const user = await auth()
@@ -14,13 +13,6 @@ export default async function Header() {
         ">
           <span className="font-semibold">{user?.user?.name ?? ''}</span>
           <div className="flex items-center gap-2">
-            <form action={async () => {
-              "use server"
-              await signOut()
-            }}>
-              <Button variant={"destructive"}>Sair</Button>
-            </form>
-
             <ThemeToggle />
             <Profile />
           </div>
