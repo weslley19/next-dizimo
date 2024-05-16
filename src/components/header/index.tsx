@@ -1,8 +1,9 @@
 import { ThemeToggle } from "@/components/theme-toggle"
 import Profile from "@/components/profile"
+import { auth } from "@/auth"
 
-export default function Header() {
-  const user = 'Weslley'
+export default async function Header() {
+  const user = await auth()
 
   return (
     <>
@@ -10,7 +11,7 @@ export default function Header() {
         <div className="border-b border-custom px-3 py-3
           flex justify-between items-center
         ">
-          <span className="font-semibold">{user}</span>
+          <span className="font-semibold">{user?.user?.name ?? ''}</span>
           <div className="flex items-center gap-2">
             <ThemeToggle />
             <Profile />

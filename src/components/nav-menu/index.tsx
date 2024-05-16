@@ -16,7 +16,7 @@ export default function NavMenu() {
               <Inbox size={16} />
               Inbox
             </NavMenuItem>
-            <NavMenuItem path="/contacts">
+            <NavMenuItem path="/person">
               <Users size={16} />
               Pessoas
             </NavMenuItem>

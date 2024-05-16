@@ -1,13 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  rewrites() {
-    return [
-      {
-        source: '/signin',
-        destination: '/login'
-      }
-    ]
-  }
-};
+const nextConfig = {}
 
 export default nextConfig;
