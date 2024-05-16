@@ -1,3 +1,5 @@
+"use client"
+
 import { DollarSign, HandCoins, Home, Inbox, Users } from "lucide-react";
 import NavMenuItem from "../nav-menu-item";
 import NavMenuGroupItems from "../nav-menu-group-items";
