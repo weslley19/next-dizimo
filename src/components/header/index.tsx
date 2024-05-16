@@ -11,7 +11,7 @@ export default async function Header() {
         <div className="border-b border-custom px-3 py-3
           flex justify-between items-center
         ">
-          <span className="font-semibold">{user?.user?.name ?? ''}</span>
+          <span className="font-semibold">Bem vindo, {user?.user?.name ?? ''}</span>
           <div className="flex items-center gap-2">
             <ThemeToggle />
             <Profile />

@@ -25,11 +25,11 @@ export default function NavMenu() {
           </NavMenuGroupItems>
 
           <NavMenuGroupItems title="Financeiro">
-            <NavMenuItem path="/cadastro/pessoas">
+            <NavMenuItem path="/dizimo">
               <DollarSign size={16} />
               Dízimos
             </NavMenuItem>
-            <NavMenuItem path="/cadastro/tickets">
+            <NavMenuItem path="/offer">
               <HandCoins size={16} />
               Ofertas
             </NavMenuItem>
