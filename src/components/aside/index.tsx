@@ -11,6 +11,7 @@ export default function Aside() {
             alt='Logo OBPC'
             width={500}
             height={500}
+            style={{ width: 'inherit', height: 'inherit' }}
           />
         </div>
         <div className="px-3 py-3">

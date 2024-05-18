@@ -17,7 +17,7 @@ export default function NavMenuItem({ path, children }: NavMenuItemProps) {
       <li>
         <Link
           href={path}
-          className={clsx("flex items-center gap-3 h-8 rounded-md	px-3 my-0.5 hover:bg-primary hover:text-primary-foreground dark:hover:bg-muted transition ease-in-out cursor-pointer",
+          className={clsx("flex items-center gap-3 h-8 rounded-md	px-3 my-0.5 hover:bg-primary hover:text-primary-foreground dark:text-foreground dark:hover:bg-muted  transition ease-in-out cursor-pointer",
             {
               "bg-primary dark:bg-muted text-primary-foreground": pathname === path
             }
