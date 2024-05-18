@@ -7,7 +7,7 @@ export default function NavMenuGroupItems({ title, children }: NavMenuGroupItems
   return (
     <>
       <div className="flex flex-col mb-4">
-        {title && <span className="px-3 mb-2 text-slate-400">{title}</span>}
+        {title && <span className="px-3 mb-2 text-muted-foreground">{title}</span>}
         {children}
       </div>
     </>

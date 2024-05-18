@@ -9,7 +9,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <Aside />
         <main className="flex min-h-screen flex-col flex-1 bg-container">
           <Header />
-          <div className="px-3 py-3">{children}</div>
+          <div className="px-3 py-3 container bg-secondary">{children}</div>
           <Toaster />
         </main>
       </div>

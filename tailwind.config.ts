@@ -27,18 +27,26 @@ const config = {
     },
     extend: {
       colors: {
-        aside: "hsl(var(--aside))",
-        nav: {
-          item: "hsl(var(--nav-item))",
-        },
-        header: "hsl(var(--header))",
-        container: "hsl(var(--container))",
-        content: "hsl(var(--content))",
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        aside: {
+          DEFAULT: "hsl(var(--aside))",
+          foreground: "hsl(var(--aside-foreground))",
+        },
+        header: {
+          DEFAULT: "hsl(var(--header))",
+          foreground: "hsl(var(--header-foreground))",
+        },
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
+        },
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
+        },
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -50,23 +58,7 @@ const config = {
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
+        }
       },
       borderWidth: {
         DEFAULT: "1px",
@@ -74,9 +66,6 @@ const config = {
         2: "2px",
         4: "4px",
         8: "8px",
-      },
-      borderColor: {
-        'custom': 'var(--border)',
       },
       borderRadius: {
         lg: "var(--radius)",
