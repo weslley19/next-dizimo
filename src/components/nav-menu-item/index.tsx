@@ -1,15 +1,15 @@
 "use client"
 
+import { PropsWithChildren } from "react"
 import { usePathname } from "next/navigation"
 import clsx from "clsx"
 import Link from "next/link"
 
 interface NavMenuItemProps {
   path: string
-  children: React.ReactNode
 }
 
-export default function NavMenuItem({ path, children }: NavMenuItemProps) {
+export default function NavMenuItem({ path, children }: PropsWithChildren<NavMenuItemProps>) {
   const pathname = usePathname()
 
   return (

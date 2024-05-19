@@ -1,9 +1,10 @@
+import { PropsWithChildren } from "react"
+
 interface NavMenuGroupItemsProps {
   title?: string
-  children: React.ReactNode
 }
 
-export default function NavMenuGroupItems({ title, children }: NavMenuGroupItemsProps) {
+export default function NavMenuGroupItems({ title, children }: PropsWithChildren<NavMenuGroupItemsProps>) {
   return (
     <>
       <div className="flex flex-col mb-4">

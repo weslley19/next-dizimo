@@ -9,6 +9,7 @@ import {
   TableRow,
 } from "@/components/ui/table"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card"
+import { money } from "@/lib/utils"
 
 interface DataTableProps {
   header: string[]
@@ -39,7 +40,7 @@ export default function DataTable({ header, body, total, title }: DataTableProps
             <TableFooter>
               <TableRow>
                 <TableCell colSpan={2}>Total</TableCell>
-                <TableCell>R$ {total}.00</TableCell>
+                <TableCell>{money(total ?? 0)}</TableCell>
               </TableRow>
             </TableFooter>
           )}

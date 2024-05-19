@@ -1,11 +1,13 @@
+import { PropsWithChildren } from "react"
+
 interface PageTitleProps {
-  children: React.ReactNode
+  className?: string
 }
 
-export default function PageTitle({ children }: PageTitleProps) {
+export default function PageTitle({ className = '', children }: PropsWithChildren<PageTitleProps>) {
   return (
     <>
-      <h1 className="text-[1.5rem] font-semibold mb-10">{children}</h1>
+      <h1 className={`text-[1.5rem] ${className} font-semibold`}>{children}</h1>
     </>
   )
 }
