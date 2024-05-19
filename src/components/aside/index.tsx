@@ -4,7 +4,7 @@ import NavMenu from "../nav-menu"
 export default function Aside() {
   return (
     <>
-      <aside className="w-[280px] bg-aside border-r">
+      <aside className="min-w-[280px] max-w-[280px] bg-aside border-r">
         <div className="h-[64.8px] px-3 py-3 flex justify-center items-center border-b">
           <Image
             src={'/images/logo.png'}

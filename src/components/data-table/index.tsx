@@ -21,7 +21,7 @@ export default function DataTable({ header, body, total, title }: DataTableProps
   return (
     <Card>
       <CardHeader>
-        {title && <CardTitle>{title}</CardTitle>}
+        {title && <CardTitle className="text-sm">{title}</CardTitle>}
       </CardHeader>
       <CardContent>
         <Table className="table-auto">
