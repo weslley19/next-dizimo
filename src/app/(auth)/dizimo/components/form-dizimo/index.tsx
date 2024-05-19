@@ -21,7 +21,7 @@ export default function FormDizimo() {
     <>
       <form onSubmit={hookForm.handleSubmit(onSubmit)}>
         <div className="flex flex-col mb-4">
-          <Label>Selecione o membro</Label>
+          <Label className="mb-1">Selecione o membro</Label>
           <Select
             {...hookForm.register('person_id')}
             options={options}
