@@ -18,3 +18,14 @@ export const dateBrMask = (date: string): string => {
   const [ano, mes, dia] = date.split('-')
   return `${dia}/${mes}/${ano}`
 }
+
+export const translateURLName = (url: string): string => {
+  const routes: { [key: string]: string } = {
+    '/': 'Home',
+    '/person': 'Membros',
+    '/dizimo': 'Dízimos',
+    '/offer': 'Ofertas',
+  }
+
+  return routes[url] ?? ''
+}

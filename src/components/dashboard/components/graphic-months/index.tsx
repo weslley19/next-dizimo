@@ -11,7 +11,7 @@ export default function GraphicMonths() {
         <CardTitle>Controle de gastos</CardTitle>
         <CardDescription>Entradas e saídas dos últimos 6 meses</CardDescription>
       </CardHeader>
-      <CardContent>
+      <CardContent className="mt-10">
         <BarChart />
       </CardContent>
     </Card>

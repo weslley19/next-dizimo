@@ -5,7 +5,7 @@ export default function Footer() {
 
   return (
     <>
-      <footer className="h-[64.8px] px-3 flex justify-between items-center text-xs">
+      <footer className="h-12 px-3 flex justify-between items-center text-xs">
         <div className="flex justify-between items-center gap-2">
           Feito com <Heart size={16} />
         </div>
