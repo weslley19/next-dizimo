@@ -25,6 +25,7 @@ export const translateURLName = (url: string): string => {
     '/person': 'Membros',
     '/dizimo': 'Dízimos',
     '/offer': 'Ofertas',
+    '/releases': 'Lançamentos'
   }
 
   return routes[url] ?? ''

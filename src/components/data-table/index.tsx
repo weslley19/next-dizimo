@@ -15,14 +15,14 @@ interface DataTableProps {
   header: string[]
   body: JSX.Element
   total?: number
-  title?: string
+  title?: string | JSX.Element
 }
 
 export default function DataTable({ header, body, total, title }: DataTableProps) {
   return (
     <Card>
       <CardHeader>
-        {title && <CardTitle className="text-sm">{title}</CardTitle>}
+        {title && <CardTitle className="text-sm flex items-center gap-2">{title}</CardTitle>}
       </CardHeader>
       <CardContent>
         <Table className="table-auto">

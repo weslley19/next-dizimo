@@ -29,9 +29,9 @@ export default function NavMenu() {
               <DollarSign size={16} />
               Dízimos
             </NavMenuItem>
-            <NavMenuItem path="/offer">
+            <NavMenuItem path="/releases">
               <HandCoins size={16} />
-              Ofertas
+              Lançamentos
             </NavMenuItem>
           </NavMenuGroupItems>
         </ul>
