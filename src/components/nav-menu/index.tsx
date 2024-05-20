@@ -1,6 +1,6 @@
 "use client"
 
-import { DollarSign, HandCoins, Home, Inbox, Users } from "lucide-react";
+import { BookCopy, DollarSign, HandCoins, Home, Users } from "lucide-react";
 import NavMenuItem from "../nav-menu-item";
 import NavMenuGroupItems from "../nav-menu-group-items";
 
@@ -14,9 +14,9 @@ export default function NavMenu() {
               <Home size={16} />
               Dashboard
             </NavMenuItem>
-            <NavMenuItem path="/inbox">
-              <Inbox size={16} />
-              Inbox
+            <NavMenuItem path="/reports">
+              <BookCopy size={16} />
+              Relatórios
             </NavMenuItem>
             <NavMenuItem path="/person">
               <Users size={16} />
